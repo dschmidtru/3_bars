@@ -157,10 +157,8 @@ def printingData(str, data):
 
 if __name__ == '__main__':
     barsdata = load_data('Бары.json')
-    # latitude = (float(input('Please, enter latitude:\n')))
-    # longitude = (float(input('Please, enter longitude:\n')))
-    latitude = 55.752705
-    longitude = 37.622731
+    latitude = (float(input('Please, enter latitude:\n')))
+    longitude = (float(input('Please, enter longitude:\n')))
     print('\n')
     biggestBars = get_biggest_bar(barsdata)
     printingData('Большие бары:', biggestBars)
