@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import json
 import sys
 import math
@@ -10,9 +9,9 @@ def load_data(filepath):
     :param filepath: Filepath of data file
     :return: data from file as list
     """
-    with open(filepath, 'r', encoding="utf8") as inputDataFile:
-        json_string = inputDataFile.readline()
-    inputDataFile.close()
+    with open(filepath, 'r', encoding="utf8") as input_data_file:
+        json_string = input_data_file.readline()
+    input_data_file.close()
     try:
         json_data = json.loads(json_string)
         return json_data
@@ -222,11 +221,11 @@ if __name__ == '__main__':
     input_latitude = user_input('Please, enter latitude:\n')
     input_longitude = user_input('Please, enter longitude:\n')
     print('\n')
-    biggestBars = get_biggest_bar(bars_data)
-    printing_data('Большие бары:', biggestBars)
+    biggest_bars = get_biggest_bar(bars_data)
+    printing_data('Большие бары:', biggest_bars)
     print('\n')
-    smallestBars = get_smallest_bar(bars_data)
-    printing_data('Маленькие бары:', smallestBars)
+    smallest_bars = get_smallest_bar(bars_data)
+    printing_data('Маленькие бары:', smallest_bars)
     print('\n')
-    closestBars = get_closest_bar(bars_data, input_longitude, input_latitude)
-    printing_data('Близкие бары:', closestBars)
+    closest_bars = get_closest_bar(bars_data, input_longitude, input_latitude)
+    printing_data('Близкие бары:', closest_bars)
