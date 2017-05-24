@@ -6,4 +6,4 @@
 
 Для работы скрипта необходимо предварительно скачать файл [Бары.json](https://yadi.sk/d/FRUYbwBD3JHquU)
 
-Запуск: bars.py Бары.json
+Запуск: python bars.py Бары.json
